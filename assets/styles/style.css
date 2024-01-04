@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600&display=swap');
+
+*{
+    font-family: 'Exo 2', sans-serif;
+}
+
+/*NAVEGADOR*/
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.logo{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color:#8b5df3;
+}
+
+.logo span{
+    color:#3519e7 ;
+}
+
+.nav{
+    display: flex;
+}
+
+.navlinks{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color:#603bed;
+    padding: 0.7rem;
+}
+/*NAVEGADOR*/
+
+/*SLIDER*/
+
+.sliderBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    align-items: flex-end;
+    position: relative;
+}
+
+.slider{
+    aspect-ratio: 10/13;
+    width: 18.75rem;
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type:x mandatory;
+    scroll-behavior: smooth;
+}
+
+.slider img{
+    width: 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.sliderButton{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.sliderButton a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #3519e7;
+    opacity: .75;
+    transition: opacity ease 250ms;
+}
+
+.sliderButton a:hover{
+    opacity: 100;
+}
+
+/*SLIDER*/
+
+/*CONTENIDO*/
+
+.title{
+    margin-top: 7em;
+    text-align: center;
+    color: #3519e7;
+}
+
+.text{
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    color: #603bed;
+}
+
+/*CONTENIDO*/
+
+/*FOOTER*/
+
+.boxBuy{
+    display: flex;
+    justify-content: center;
+}
+
+.buy{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    background-color: #e1a1ff;
+    height: 2.2rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #3519e7;
+}
+
+.buy:hover{
+    background-color: #96fd96;
+    color: #000000;
+}
+
+
+
+/*FOOTER*/
+
+
+/*CELULARES*/
+@media (max-width:768px){
+    .sliderBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+    }
+    
+    .slider{
+        aspect-ratio: 10/13;
+        width: 18.75rem;
+        position: relative;
+        display: flex;
+        overflow-x: scroll;
+        scroll-snap-type:x mandatory;
+    }
+    
+    .slider::-webkit-scrollbar {
+        height: 0.7rem;
+        
+    }
+    
+    .slider::-webkit-scrollbar-thumb {
+        background-color: #3519e7;
+        border-radius: 0.3rem;
+    }
+    
+    
+    .slider img{
+        width: 100%;
+        left: 0;
+        position: sticky;
+        object-fit: cover;
+        border-radius: 0.3rem;
+        scroll-snap-align: center;
+    }
+}
+
+/*CELULARES*/
