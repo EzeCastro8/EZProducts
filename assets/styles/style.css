@@ -100,8 +100,17 @@
 .text{
     margin-left: 30%;
     margin-right: 30%;
-    text-align: center;
+    text-align:center;
     color: #603bed;
+    line-height: 2rem;
+}
+
+.textDetails{
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align:left;
+    color: #603bed;
+    line-height: 2rem;
 }
 
 /*CONTENIDO*/
